@@ -12,7 +12,7 @@
 			<button ion-button (click)="getPicture(1)">Show Camera</button>
 		</ion-col>
 		<ion-col width-50>
-			<button ion-button (click)="getPicture(0)">Show Album</button>
+			<button ion-button (click)="getPicture(1)">Show Album</button>
 		</ion-col>
 	</ion-row>
 
@@ -22,7 +22,7 @@
 	</ion-item>
 
 	<ion-card>
-		<img [src]="imageData" *ngIf="imageData"  />
+		<img [src]="imageData" *ngIf="imageData" />
 		<ion-card-content>
 			<ion-card-title>
 				<div *ngIf="useURI">
